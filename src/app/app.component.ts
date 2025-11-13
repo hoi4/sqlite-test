@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { IonApp, IonRouterOutlet, Platform } from '@ionic/angular/standalone';
 import {
   CapacitorSQLite,
   SQLiteConnection,
@@ -12,8 +12,10 @@ import {
   imports: [IonApp, IonRouterOutlet],
 })
 export class AppComponent {
-  constructor() {
-    this.init();
+  constructor(private readonly _platform: Platform) {
+    this._platform.ready().then(() => {
+      this.init();
+    });
   }
 
   async init(): Promise<void> {
