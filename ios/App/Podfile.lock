@@ -1,4 +1,9 @@
 PODS:
+  - AmplitudeCore (1.2.4)
+  - AmplitudeSwift (1.15.3):
+    - AmplitudeCore (< 2.0.0, >= 1.2.4)
+    - AnalyticsConnector (~> 1.3.0)
+  - AnalyticsConnector (1.3.1)
   - Capacitor (7.4.4):
     - CapacitorCordova
   - CapacitorApp (7.1.0):
@@ -22,6 +27,7 @@ PODS:
   - ZIPFoundation (0.9.19)
 
 DEPENDENCIES:
+  - AmplitudeSwift (~> 1.15.3)
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCommunitySqlite (from `../../node_modules/@capacitor-community/sqlite`)"
@@ -32,6 +38,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AmplitudeCore
+    - AmplitudeSwift
+    - AnalyticsConnector
     - SQLCipher
     - ZIPFoundation
 
@@ -52,6 +61,9 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/status-bar"
 
 SPEC CHECKSUMS:
+  AmplitudeCore: 25385873104770c5245ed5780acd3eb1b3ae74b7
+  AmplitudeSwift: 8fe34c0cafde3474cfb4b3af0d47275f76c74a55
+  AnalyticsConnector: 3def11199b4ddcad7202c778bde982ec5da0ebb3
   Capacitor: 358dd1c3fdd71d969547b17e159fd8a7736cb45f
   CapacitorApp: 26587c2ce485d88ddb39adb21cac64f8e481afe3
   CapacitorCommunitySqlite: a57c58e1c37f4bc250ef01e66b0055cb6ddd775e
@@ -62,6 +74,6 @@ SPEC CHECKSUMS:
   SQLCipher: eb79c64049cb002b4e9fcb30edb7979bf4706dfc
   ZIPFoundation: b8c29ea7ae353b309bc810586181fd073cb3312c
 
-PODFILE CHECKSUM: ff59d12b7ff6d06f47da870e6d4b73d9a2f73582
+PODFILE CHECKSUM: f01926bb8fe66933760a409256e95c8be5d97a0e
 
 COCOAPODS: 1.16.2
