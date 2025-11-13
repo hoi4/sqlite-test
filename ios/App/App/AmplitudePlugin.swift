@@ -5,7 +5,7 @@
 //  Created by Philipp Heuer on 13.11.25.
 //
 
-// import AmplitudeSwift // commenting out the Amplitude import causes the build to succeed
+import AmplitudeSwift // commenting out the Amplitude import causes the build to succeed
 import Capacitor
 import Foundation
 
