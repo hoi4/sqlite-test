@@ -16,4 +16,5 @@
 ## Bug reproduction:
 
 - When building the project, the build will error
-- commenting out the `AmplitudeSwift` import in the `AmplitudePlugin.swift` file resolves the build error.
+- commenting out the `SQLite3` import in the `AmplitudePlugin.swift` file resolves the build error.
+- note that this bug is not about Amplitude, it is about any third party library that uses the native `SQLite3` dependency under the hood.
