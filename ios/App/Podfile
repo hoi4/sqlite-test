@@ -21,7 +21,6 @@ end
 target 'App' do
   capacitor_pods
   # Add your Pods here
-  pod 'AmplitudeSwift', '~> 1.15.3'
 end
 
 post_install do |installer|

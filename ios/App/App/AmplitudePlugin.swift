@@ -5,7 +5,7 @@
 //  Created by Philipp Heuer on 13.11.25.
 //
 
-import AmplitudeSwift // commenting out the Amplitude import causes the build to succeed
+import SQLite3 // commenting out the SQLite3 import causes the build to succeed
 import Capacitor
 import Foundation
 
